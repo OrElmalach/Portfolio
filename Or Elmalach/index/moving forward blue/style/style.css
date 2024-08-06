@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+body{
+    margin: 0;
+    direction: rtl;
+}
+.hero{
+    background-image: url(../images/Path\ 15.png);
+    background-size: cover;
+    background-position: center center;
+    padding: 280px 0;
+}
+
+.hero > .content{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1{
+    font-family: "Assistant", sans-serif;
+    font-size: 86px;
+    color: #D3E10E;
+}
+p{
+    font-size: 20px;
+    color: #F9F9F9;
+    font-family: "Assistant", sans-serif;
+}
+
+.form{
+    width: 100%;
+    margin-top: 80px;
+    margin-right: 50%;
+    transform: translateX(20%);
+    margin-bottom: 50px;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    gap: 0 75px;
+    font-family: "Assistant", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.box1{
+    color: #011560;
+    font-family: "Assistant", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.box1 > input{
+    border-bottom: 4px solid #D3E10E;
+    border-top: #F6F6F6;
+    border-right: #F6F6F6;
+    border-left: #F6F6F6;
+    background-color: #F6F6F6;
+    color: black;
+    width: 300px;
+    height: 35px;
+}
+input[type=submit]{
+    color: #011560;
+    font-family: "Assistant", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #D3E10E;
+    padding: 7px 40px;
+    border: none;
+    -ms-transition: transform 1s, background-color 2s;
+    -webkit-transition: transform 1s, background-color 2s;
+    -moz-transition: transform 1s, background-color 2s;
+    transition: transform 1s, background-color 2s;
+}
+input[type=submit]:hover{
+    -ms-transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+    background-color: lime;
+}
+
+
+@media screen and(max-width:1400px){
+    .hero{
+        width: 100%;
+    }
+}
+@media  screen and (max-width:1100px){
+    h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: 15px;
+    }
+
+    .box1{
+        font-size: 10px;
+    }
+    input[type=submit]{
+        font-size: 14px;
+        width: 300px;
+    }
+  
+    form{
+        flex-direction: column;
+        gap: 15px;
+        margin-right: 50%;
+        transform: translateX(30%);
+        padding-bottom: 10px;
+        
+    }
+    .form{
+        width: 100%;
+        margin-right: 0;
+        
+    }
+    .hero{
+        padding: 150px 25px;
+}
+}

@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+body{
+    direction: rtl;
+    background-color: #E5EEFF;
+}
+
+
+.gallery1{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 1560px;
+    margin: 125px auto;
+    gap: 15px;
+    
+}
+
+
+#box1{
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    font-family: "Assistant", sans-serif;
+    padding-right: 25px;
+    padding-left: 25px;
+    background-color: #020253;
+    padding-top: 200px;
+
+    
+}
+#box1 > h1{
+    font-weight: 900;
+    font-size: 61px;
+    color: #0EE1DA;
+    
+}
+#box1 > p{
+    font-size: 20px;
+    color: #F9F9F9;
+   
+}
+#box16{
+    grid-column: 3 / 5;
+    grid-row: 4 / 7;
+    background-color: #8E097C;
+    font-family: "Assistant", sans-serif;
+    padding: 125px 25px;
+}
+form > h1{
+    font-size: 35px;
+    color: #F9F9F9;
+}
+form > p {
+    font-size: 20px;
+    color: #F9F9F9;
+}
+
+.form1{
+    color: #0EE1DA;
+    font-family: "Heebo", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+}
+input[type=submit]{
+    font-size: 24px;
+    font-family: "Heebo", sans-serif;
+    font-weight: bold;
+    background-color: #0EE1DA;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    transition: background-color 1s, transform 1s;
+    -webkit-transition: background-color 1s, transform 1s;
+    -moz-transition: background-color 1s, transform 1s;
+    -ms-transition: background-color 1s, transform 1s;
+}
+
+input[type=submit]:hover{
+    background-color: lightgreen;
+    -ms-transform: scale(1.05, 1.05);
+    -webkit-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+}
+img{
+    width: 375px;
+}
+
+.footer{
+    background-color: white;
+    width: 100%;
+    height: 150px;
+}
+
+
+@media  screen and (max-width: 1580px){
+    .gallery1{
+     width: 100%;
+    }
+    img{
+     width: 300px;
+    }
+    
+ 
+ 
+ }
+@media  screen and (max-width: 768px){
+    #box1{ 
+        width: 100%;
+        padding: 150px 25px;
+        grid-row: 1 / 3;
+        grid-column: 1 / 3;
+       
+    }
+    #box1 > h1{
+        font-size: 36px;
+    }
+    #box1 > p{
+        font-size: 20px
+    }
+    #box16{
+        width: 325px;
+        padding: 25px 25px;
+    }
+    form> h1{
+        font-size: 25px;
+        
+    }
+    form > p {
+        font-size: 15px;
+    }
+    .form1{
+        font-size: 8px;
+    }
+    input[type=submit]{
+        font-size: 12px;
+    }
+
+    .gallery1{
+        width: 100%;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        padding: 25px;
+    }
+    Img{
+        width: 100%;
+    }
+    #box16{
+        grid-column: 1 / 3;
+        grid-row: 7 / 10;
+        width: 100%;
+        padding: 75px 25px;
+    }
+}
